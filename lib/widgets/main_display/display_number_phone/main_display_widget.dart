@@ -203,7 +203,11 @@ class _NextButtonState extends State<NextButton> {
                     : Colors.white,
                 child: InkWell(
                     splashColor: Colors.grey,
-                    onTap: () {},
+                    onTap: (_switcher == false)
+                        ? null
+                        : () {
+                            print('You have pushed on the button!');
+                          },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
