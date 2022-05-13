@@ -60,7 +60,7 @@ class ButtonClose extends StatelessWidget {
                 child: InkWell(
                     splashColor: Colors.grey,
                     onTap: () {
-                      Navigator.pushReplacementNamed(context, '/');
+                      Navigator.pop(context, '/');
                     },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -136,7 +136,7 @@ class _ListCountryWState extends State<ListCountryW> {
                       child: Padding(
                         padding: const EdgeInsets.only(left: 8, top: 14),
                         child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
+                          // mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             oneCountry.flags?.svg != null
                                 ? SizedBox(
